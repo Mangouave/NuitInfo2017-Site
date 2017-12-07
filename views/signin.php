@@ -18,9 +18,9 @@
 		<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 
 			<a class="navbar-brand" href="#">
-				<img src="./stock-vector-glass-of-mojito-cocktail-vector-icon-447326680.jpg" width="30" height="50" class="d-inline-block align-top" alt="">
+				<img src="../img/logo-mojito.png" height="50" class="d-inline-block align-top" alt="">
 			</a>
-			<h2>Moji'O'to</h2>
+
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
