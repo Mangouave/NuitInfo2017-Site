@@ -1,0 +1,90 @@
+div{
+	height: 200vh;
+	display: inline-block;
+}
+
+*{
+	overflow-y: hidden;
+	font-size: 0;
+	margin: 0;
+}
+
+#score{
+	position: absolute;
+}
+
+.vide{
+	width: 5%;
+	background: brown;
+}
+
+.bandeArret{
+	width: 15%;
+	background: #5b5b5b;
+}
+
+.route{
+	width: 20%;
+	background: #2d2d2d;
+}
+
+#car{
+	position: absolute;
+	width: 10%;
+	left: 45%;
+	bottom: 5%;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+#routeL{
+	position: absolute;
+	left: 20%;
+	top:-800;
+	border-right: dashed white 10px;
+	border-left: dashed white 10px;
+	box-sizing: border-box;
+	animation-name: animateRoad;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+#routeM{
+	position: absolute;
+	left: 40%;
+}
+#routeR{
+	position: absolute;
+	left: 60%;
+	top:-800;
+	border-right: dashed white 10px;
+	border-left: dashed white 10px;
+	box-sizing: border-box;
+	animation-name: animateRoad;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.mojito{
+	position: absolute;
+	width: 5%;
+	background: white;
+	left: 47.5%;
+	animation-timing-function: linear;
+	animation-name: downMojito;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes downMojito{
+	0% {top: -10%;}
+	99% {visibility: visible;}
+	100% {top: 100%; visibility: hidden;}
+}
+
+@keyframes animateRoad {
+  to {
+  	top: -200px;
+  }
+}

@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+
+	<body id="box">
+		<div id='score'>0</div>
+		<img id="car" src="img/car.png">
+		<div class='route move' id='routeL'></div>
+		<div class='route move' id='routeM'></div>
+		<div class='route move' id='routeR'></div>
+		<div class="vide">
+		</div>class='route'
+
+		<div class='bandeArret'>
+		</div>
+
+		<div class='route'>
+		</div>
+
+		<div class='route'>
+		</div>
+
+		<div class='route'>
+		</div>
+
+		<div class='bandeArret'>
+		</div>
+
+		<div class="vide">
+		</div>
+
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		var car = document.getElementById("car");
+		var position = 3;
+		var speedRate = 2000;
+		var carY = $("#car").position().top;
+		var drinkedMojito = 0;
+		var bluredLvl = 0;
+		var bluredSeuil = 2;
+		var score = 0;
+		
+		document.onkeydown = function(e){
+			if (e.keyCode == 39)
+			{
+				switch(position)
+				{
+					case(1) :
+						car.style.left = "25%";
+						position = 2;
+						break;
+
+					case(2) :
+						car.style.left = "45%";
+						position = 3;
+						break;
+
+					case(3) :
+						car.style.left = "65%";
+						position = 4;
+						break;
+
+					case(4) :
+						car.style.left = "82.5%";
+						position = 5;
+						break;
+
+				}
+			};
+
+			if (e.keyCode == 37) 
+			{
+				switch(position)
+				{
+					case(2) :
+						car.style.left = "7.5%";
+						position = 1;
+						break;
+
+					case(3) :
+						car.style.left = "25%";
+						position = 2;
+						break;
+
+					case(4) :
+						car.style.left = "45%";
+						position = 3;
+						break;
+
+					case(5) :
+						car.style.left = "65%";
+						position = 4;
+						break;
+
+				}
+			}
+		}
+
+		var genMojito = function(){
+
+			var posMojito = Math.round(Math.random() * (3 - 1) + 0);
+
+			var box = $('#box');
+
+			var percent;
+
+			switch(posMojito)
+			{
+				case(0) :
+					percent = 47.5;
+					break;
+
+				case(1) :
+					percent = 27.5;
+					break;
+
+				case(2) :
+					percent = 67.5;
+					break;
+			}
+
+			box.append("<img class='mojito' src='img/mojito.png' style='left:"+percent+"%;'>");
+		}
+
+		var checkCollision = function(){
+			$(".mojito").each(function() {
+				var pos = $(this).position();
+				var carPos = $("#car").position();
+				if (((pos.top < carY + 300) && (pos.top > carY - 50)) && ((pos.left < carPos.left + 50) && (pos.left > carPos.left - 50))) 
+				{
+					drinkedMojito++;
+					console.log(drinkedMojito);
+					this.remove();
+				};
+				if (pos.top > 930) 
+				{
+					this.remove();
+				};
+
+				if (drinkedMojito > bluredSeuil) 
+				{
+					bluredSeuil += 2;
+					bluredLvl++;
+					document.getElementById("box").style.webkitFilter = "blur("+bluredLvl+"px)";
+				};
+			});
+			score += 10;
+			document.getElementById('score').html = score;
+		}
+
+		setInterval(genMojito, speedRate);
+
+		setInterval(checkCollision, 50);
+
+
+
+
+	</script>
+</html>

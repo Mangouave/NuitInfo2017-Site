@@ -1,0 +1,49 @@
+input{
+	display: block;
+	border-radius: 5px;
+	border: solid 2px  #6E8F2A;
+	padding: 5px;
+	text-align: center;
+	margin: 5px 0 5px 0;
+	font-weight: bold;
+
+}
+#btnLogIn{
+	border-radius: 3px;
+	background: white;
+	border: 2px solid  #6E8F2A;
+	color: #6E8F2A;
+	padding: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.5s;
+	outline: none;
+}
+#btnLogIn:hover{
+	background:  #6E8F2A;
+	color: white;
+}
+
+#logBox{
+	border: 3px solid #6E8F2A;
+	display: inline-block;
+	padding: 25px;
+	text-align: center;
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+a{
+	text-decoration: none;
+	color: lightgrey;
+}
+
+a:hover{
+	color: #CFCB3D;
+}
+
+img{
+	border-radius: 50px;
+	margin: 0 0 20px 0;
+	width: 50px;
+}
