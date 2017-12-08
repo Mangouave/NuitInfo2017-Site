@@ -10,16 +10,16 @@
 				<p class="nav-link" id="">Alcoohol test</p>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" id="show-signup" data-toggle="modal" data-target="login-modal" href="">Sign up</a>
+				<a class="nav-link" id="show-signup" data-toggle="modal" href="">Sign up</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" id="show-signin" data-toggle="modal" data-target="signin-modal" href="">Sign in</a>
+				<a class="nav-link" id="show-signin" data-toggle="modal" href="">Sign in</a>
 			</li>
 		</ul>
 	</div>
 </nav>
 
-<div id="signin-modal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="login-modal" aria-hidden="true">
+<div id="signin-modal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
 			<div id='logbox'>
