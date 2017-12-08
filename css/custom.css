@@ -67,6 +67,15 @@
 	color: white;
 }
 
+#logbox{
+	border: 3px solid #6E8F2A;
+	display: inline-block;
+	padding: 25px;
+	text-align: center;
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
 #logbox a{
 	text-decoration: none;
 	color: lightgrey;

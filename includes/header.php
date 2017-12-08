@@ -35,16 +35,16 @@
 </div>
 
 
-<div id="signup-modal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="signin-modal" aria-hidden="true">
+<div id="signup-modal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="signup-modal" aria-hidden="true">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
 			<div id='logbox'>
 				<img src="../img/lemon.png">
 				<input type="text" placeholder="Username">
 				<input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
 				<button id='login-btn'>Sign up</button>
-				<p><a href="">Mot de passe perdu ?</a></p>
-				<p><a href="">Créer son compte !</a></p>
+                <p><a href="">Déjà un compte ? <br>Connectez-vous !</a></p>
 			</div>
 		</div>
 	</div>
