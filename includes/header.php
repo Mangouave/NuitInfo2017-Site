@@ -19,32 +19,25 @@
 	</div>
 </nav>
 
-<div id="signin-modal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+<div id="sign-modal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
-			<div id='logbox'>
+			<div class='logbox'  id="signin-logbox">
 				<img src="../img/lemon.png">
 				<input type="text" placeholder="Username">
 				<input type="password" placeholder="Password">
 				<button id='login-btn'>Sign in</button>
 				<p><a href="">Mot de passe perdu ?</a></p>
-				<p><a href="">Créer son compte !</a></p>
+				<p id="create-account">Créer son compte !</p>
 			</div>
-		</div>
-	</div>
-</div>
-
-
-<div id="signup-modal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="signin-modal" aria-hidden="true">
-	<div class="modal-dialog modal-sm">
-		<div class="modal-content">
-			<div id='logbox'>
+			
+			<div class='logbox' id="signup-logbox">
 				<img src="../img/lemon.png">
 				<input type="text" placeholder="Username">
 				<input type="password" placeholder="Password">
 				<button id='login-btn'>Sign up</button>
 				<p><a href="">Mot de passe perdu ?</a></p>
-				<p><a href="">Créer son compte !</a></p>
+				<p id="already-has-account">J'ai déjà un compte !</p>
 			</div>
 		</div>
 	</div>

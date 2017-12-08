@@ -32,7 +32,8 @@
 	margin:auto; 
 }
 
-#logbox{
+.logbox{
+	display: none; 
 	border: 3px solid #6E8F2A;
 	display: inline-block;
 	padding: 25px;
@@ -41,17 +42,17 @@
 	background: rgba(0, 0, 0, 0.6);
 }
 
-#logbox input{
+.logbox input{
 	display: block;
 	border-radius: 5px;
-	border: solid 2px  #6E8F2A;
+	border: solid 2px #6E8F2A;
 	padding: 5px;
 	text-align: center;
 	margin: 5px auto;
 	font-weight: bold;
 }
 
-#logbox #login-btn{
+.logbox #login-btn{
 	border-radius: 3px;
 	background: white;
 	border: 2px solid  #6E8F2A;
@@ -62,21 +63,22 @@
 	transition: 0.5s;
 	outline: none;
 }
-#logbox #login-btn:hover{
+.logbox #login-btn:hover{
 	background:  #6E8F2A;
 	color: white;
 }
 
-#logbox a{
+.logbox a, #already-has-account, #create-account{
 	text-decoration: none;
 	color: lightgrey;
 }
 
-#logbox a:hover{
+.logbox a:hover, #already-has-account:hover, #create-account:hover{
 	color: #CFCB3D;
+	cursor: pointer; 
 }
 
-#logbox img{
+.logbox img{
 	border-radius: 50px;
 	margin: 0 0 20px 0;
 	width: 50px;
