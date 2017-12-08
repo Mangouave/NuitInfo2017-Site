@@ -9,10 +9,12 @@ class View {
 	}
 
 	beginRound(){
+		$("#mainPanel").html("<p>En attente du vert...</p>");	
 		$("#mainPanel").removeClass("btn-info").addClass("btn-danger");
 	}
 
 	setToBeClicked(){
+		$("#mainPanel").html("<p>Clique !</p>");	
 		$("#mainPanel").removeClass("btn-danger").addClass("btn-success");		
 	}
 

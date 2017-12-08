@@ -14,49 +14,36 @@
 
 		<script	src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-
+		<script src="view.js"></script>
+		<script src="controller.js"></script>
 
 		<script>
 			$(document).ready(function(){
-
+				new controller(this);
 			});
 		</script>
 
 		<style>
-			#mainPanel {
-				margin-top: 10vh;
-				margin-bottom: 10vh;
-				max-width: 40vw;
-			}
-
-			.col {
-				text-align: center;
-			}
-
-			button {
+			#mainPanel{
+				height: 40vh;
+				width: 40vw;
 				cursor: pointer;
 			}
 		</style>
 	</head>
 
 	<body>
-		<?php include "../includes/header.php" ?>		
+		<?php include "../../includes/header.php" ?>		
 
-		<div id="mainPanel" class="container">
-			<div class="row align-items-center">
+		<div id="mainPanel" class="container btn-info">
+			<div class="row">
 				<div class="col md">
-					<a href="/NuitInfo2017-Site/tests/fastClick"><button type="button" class="btn btn-info">FastClick</button></a>
-				</div>
-				<div class="col md">
-					<button type="button" class="btn btn-light">CarGame</button>				
-				</div>
-				<div class="col md">
-					<button type="button" class="btn btn-dark">????</button>					
+				
 				</div>
 			</div>
 		</div>
 
-		<?php include "../includes/footer.php" ?>
+		<?php include "../../includes/footer.php" ?>
 
 	</body>
 

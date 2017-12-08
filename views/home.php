@@ -6,7 +6,7 @@
 		<?php include "../includes/header.php" ?>
 		<div id="event-jumbotron" class="jumbotron jumbotron-fluid">
 			<div class="container">
-				<h1 class="display-3 display-jumbotron">Tu prends l'auto, lâche ton mojito ! </h1>
+				<h1 class="display-3 display-jumbotron">Tu prends l'auto ? Lâche ton mojito ! </h1>
 			</div>
 		</div>
 		
