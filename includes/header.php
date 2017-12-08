@@ -35,8 +35,8 @@
 				<img src="../img/lemon.png">
 				<input type="text" placeholder="Username">
 				<input type="password" placeholder="Password">
+				<input type="password" placeholder="Confirm password">
 				<button id='login-btn'>Sign up</button>
-				<p><a href="">Mot de passe perdu ?</a></p>
 				<p id="already-has-account">J'ai déjà un compte !</p>
 			</div>
 		</div>
