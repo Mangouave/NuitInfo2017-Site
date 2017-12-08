@@ -22,6 +22,7 @@
 <div id="sign-modal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
+			
 			<div class='logbox'  id="signin-logbox">
 				<img src="../img/lemon.png">
 				<input type="text" placeholder="Username">
