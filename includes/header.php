@@ -11,7 +11,7 @@
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item">
 				<p class="nav-link" id="">Alcoohol test</p>
-				<p class="nav-link" id="" >Test de réactivité</p>
+				<p class="nav-link"><a href="/tests/">Test de réactivité</a></p>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" id="show-signup" data-toggle="modal" href="">Sign up</a>
